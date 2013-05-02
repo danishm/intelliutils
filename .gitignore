@@ -1,2 +1,6 @@
+# Eclipse project
 .project
 .pydevproject
+
+# Python
+*.py[cod]
