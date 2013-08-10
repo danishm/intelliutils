@@ -27,4 +27,15 @@ def drop_nones(vals):
     Remove None or empty strings from a list
     """
     return filter(is_not_none, vals)
+
+def coalesce(*values):
+    """
+    Return the first non null values from the list of values passed
+    to the function.
+    """
+    for value in values:
+        if value is not None:
+            return value
+    
+    return None
     
